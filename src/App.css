@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+:root {
+  --widthAndHeight: 70px;
+  --width: 8;
+  --height: 8; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.game {
+  display: flex;
+  width: calc(var(--widthAndHeight) * var(--width));
+  height: calc(var(--widthAndHeight) * var(--height));
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game .block {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transform: scale(0.95);
 }
+
+.block.blue {
+	border-radius: 50% 5% 50% 50%;
+  background-color: #80e2ff;
+}
+
+.block.green {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: #6dce80;
+}
+
+.block.orange{
+  border-radius: 34% 66% 41% 59% / 100% 10% 90% 0%;
+  background-color: #ff971a;
+}
+
+.block.purple{
+  border-radius: 69% 31% 46% 54% / 100% 65% 35% 0%;
+  background-color: #d099e2;
+}
+
+.block.red {
+	border-radius: 50%;
+  background-color: #ff6961;
+}
+
+.block.yellow{
+  border-radius: 30% 70% 0% 100% / 7% 39% 61% 93%;
+  background-color: #fddd5c;
+}
+ 
