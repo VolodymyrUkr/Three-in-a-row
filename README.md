@@ -1,5 +1,7 @@
 # Three-in-a-row
 Simple Three in a Row game with React
+![2021-12-14 (2)](https://user-images.githubusercontent.com/4512056/146015573-307b2ab9-eb38-4851-b135-cfed378d936d.png)
+![2021-12-14 (3)](https://user-images.githubusercontent.com/4512056/146015676-e111a766-786a-478e-8fc9-45c37d9ab4fd.png)
 
 # Getting Started with Create React App
 
